@@ -1,58 +1,56 @@
-# Genome Analysis & Visualization Pipeline
+# Microbial Genome Data Platform
 
-A reproducible bioinformatics pipeline for processing, validating,
-annotating, and preparing genome-scale datasets for downstream
-genomic analysis and genome-browser visualization.
+A reproducible Python-based platform for ingesting, validating, storing, querying, and performing quality control on microbial genome resources from NCBI RefSeq.
 
-## Project objectives
+## Project Overview
 
-- Process genome sequence and annotation files
-- Validate FASTA and GFF3 genomic data
-- Extract genome-level and feature-level statistics
-- Integrate genomic metadata
-- Generate analysis-ready BED/TSV outputs
-- Produce quality-control reports
-- Prepare datasets for genome-browser inspection
-- Demonstrate reproducible Linux/Python bioinformatics workflows
+This project demonstrates a production-oriented approach to handling structured microbial genome resources at scale.
 
-## Technologies
+The platform currently ingests multiple NCBI RefSeq microbial assemblies, parses genomic FASTA and GFF3 data, validates genome and annotation records, stores structured information in SQLite, and exposes query functionality through both Python APIs and a command-line interface.
 
-Python • Linux/WSL • Biopython • pandas • GFF3 • FASTA • BED
-• genomic QC • data validation • reproducible pipelines
-• genome visualization workflows
+## Architecture
 
-## Planned workflow
-
-Raw genomic data
-        ↓
-Input validation
-        ↓
-FASTA/GFF3 parsing
-        ↓
-Genome statistics
-        ↓
-Feature extraction
-        ↓
-QC and validation
-        ↓
-Browser-ready genomic tracks
-        ↓
-Automated report
-
-## Status
-
-Project under active development.
-
-## Multi-genome ingestion
-
-The platform supports batch ingestion of multiple NCBI RefSeq microbial
-assemblies from an accession list. The current validation dataset contains
-three assemblies and stores genome metadata, replicons, and GFF3-derived
-features in SQLite.
-
-### Reproducible build
-
-```bash
-PYTHONPATH=. python scripts/build_platform.py
-
-
+```text
+NCBI RefSeq
+    │
+    ▼
+Genome accession list
+    │
+    ▼
+NCBI Datasets
+    │
+    ├── FASTA
+    ├── GFF3
+    └── Metadata
+    │
+    ▼
+Python ingestion layer
+    │
+    ├── FASTA parsing
+    ├── GFF3 parsing
+    └── metadata extraction
+    │
+    ▼
+Validation & QC
+    │
+    ├── sequence validation
+    ├── coordinate validation
+    ├── feature statistics
+    └── genome-level QC
+    │
+    ▼
+SQLite relational database
+    │
+    ├── genomes
+    ├── replicons
+    └── features
+    │
+    ▼
+Query layer + CLI
+    │
+    ├── genome queries
+    ├── replicon queries
+    └── feature queries
+    │
+    ▼
+QC reports & analysis outputs
