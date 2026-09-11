@@ -1,0 +1,53 @@
+[
+  {
+    "assembly_accession": "GCF_000005845.2",
+    "sequence_count": 1,
+    "total_sequence_bp": 4641652,
+    "invalid_sequences": 0,
+    "feature_count": 9523,
+    "feature_types": 11,
+    "invalid_coordinates": 0,
+    "top_feature_types": [
+      [
+        "gene",
+        4506
+      ],
+      [
+        "CDS",
+        4340
+      ],
+      [
+        "exon",
+        216
+      ],
+      [
+        "pseudogene",
+        145
+      ],
+      [
+        "ncRNA",
+        108
+      ],
+      [
+        "tRNA",
+        86
+      ],
+      [
+        "mobile_genetic_element",
+        50
+      ],
+      [
+        "sequence_feature",
+        48
+      ],
+      [
+        "rRNA",
+        22
+      ],
+      [
+        "region",
+        1
+      ]
+    ]
+  }
+]

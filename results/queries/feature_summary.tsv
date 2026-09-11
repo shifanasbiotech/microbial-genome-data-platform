@@ -1,0 +1,17 @@
+feature_type	feature_count
+gene	14235
+CDS	13736
+exon	553
+pseudogene	369
+sequence_feature	300
+tRNA	275
+ncRNA	108
+transcript	93
+rRNA	74
+repeat_region	65
+mobile_genetic_element	50
+region	7
+antisense_RNA	1
+origin_of_replication	1
+scRNA	1
+tmRNA	1
