@@ -800,7 +800,7 @@ The current implementation includes:
 
 # License
 
-This project is distributed under the MIT License.
+This project is licensed under the MIT License. See the `LICENSE` file for details.
 
 See `LICENSE` for details.
 
