@@ -806,6 +806,43 @@ See `LICENSE` for details.
 
 ---
 
+
+## Project Visualizations
+
+The following figures are **generated programmatically from the project's SQLite database and workflow using Python and Matplotlib**. They provide visual evidence of the multi-genome dataset, annotation analysis, and platform architecture.
+
+### Platform Workflow
+
+The platform follows a reproducible workflow from NCBI RefSeq genome acquisition through FASTA/GFF3 parsing, validation, relational storage, command-line querying, and analysis.
+
+![Microbial Genome Data Platform Workflow](reports/figures/04_platform_workflow.png)
+
+### Multi-Genome Dataset
+
+The platform was validated using three NCBI RefSeq microbial genome assemblies.
+
+| Assembly | Genome Size | Contigs | Annotated Features |
+|---|---:|---:|---:|
+| GCF_000005845.2 | 4,641,652 bp | 1 | 9,523 |
+| GCF_000008865.2 | 5,594,605 bp | 3 | 11,058 |
+| GCF_000009045.1 | 4,215,606 bp | 1 | 9,288 |
+
+### Genome Size Comparison
+
+![Genome Size Comparison](reports/figures/01_genome_size_comparison.png)
+
+### E. coli K-12 MG1655 — Genomic Feature Distribution
+
+Feature-level analysis of the GCF_000005845.2 assembly.
+
+![E. coli Genomic Feature Distribution](reports/figures/02_ecoli_feature_distribution.png)
+
+### Platform Dataset Summary
+
+The completed validation dataset contains 3 genomes, 5 replicons/contigs, 14,451,863 bp of genomic sequence, and 29,869 annotated features.
+
+![Platform Dataset Summary](reports/figures/03_platform_dataset_summary.png)
+
 ## Author
 
 **Shifa Anas**
