@@ -807,6 +807,7 @@ See `LICENSE` for details.
 ---
 
 
+
 ## Project Visualizations
 
 The following figures are **generated programmatically from the project's SQLite database and workflow using Python and Matplotlib**. They provide visual evidence of the multi-genome dataset, annotation analysis, and platform architecture.
